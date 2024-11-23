@@ -28,7 +28,7 @@ const DisplayPage = () => {
     <div className="max-w-4xl mx-auto px-4 py-16">
       <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20">
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-white mb-4">Display Screen</h1>
+          <h1 className="text-3xl font-bold text-white mb-4">Signal Screen</h1>
           <div className={`inline-flex items-center ${connected ? 'text-green-400' : 'text-red-400'}`}>
             <span className={`h-3 w-3 rounded-full mr-2 ${connected ? 'bg-green-400' : 'bg-red-400'}`}></span>
             {connected ? 'Connected' : 'Disconnected'}

@@ -1,8 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import { Gamepad2, Radio } from 'lucide-react';
+import { Radio } from 'lucide-react';
 import ButtonPage from './pages/ButtonPage';
 import DisplayPage from './pages/DisplayPage';
+import logo from '../../assets/favicon.png'
+
 
 function App() {
   return (
@@ -13,7 +15,7 @@ function App() {
             <div className="flex items-center justify-between h-16">
               <div className="flex items-center">
                 <Link to="/" className="flex items-center text-white hover:text-indigo-200">
-                  <img src="/favicon.png" alt="Logo" className="h-8 w-8 mr-2" />
+                  <img src={logo} alt="Logo" className="h-8 w-8 mr-2" />
                   <span className="text-xl font-bold">METANOIA 2024</span>
                 </Link>
               </div>
@@ -57,7 +59,7 @@ function Home() {
             to="/button"
             className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20 hover:bg-white/20 transition-all group"
           >
-            <img src="/favicon.png" alt="Logo"  className="h-16 w-16 text-white mx-auto mb-4 group-hover:scale-110 transition-transform" />
+            <img src={logo} alt="Logo"  className="h-16 w-16 text-white mx-auto mb-4 group-hover:scale-110 transition-transform" />
             <h2 className="text-2xl font-bold text-white mb-2">INAUGRATION</h2>
             <p className="text-indigo-100">
               Click INAUGRATE to send real-time signals to drop the banner

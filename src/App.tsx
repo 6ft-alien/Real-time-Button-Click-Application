@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import { Radio } from 'lucide-react';
 import ButtonPage from './pages/ButtonPage';
 import DisplayPage from './pages/DisplayPage';
-import logo from '../../assets/favicon.png'
+import logo from '../assets/favicon.png'
 
 
 function App() {

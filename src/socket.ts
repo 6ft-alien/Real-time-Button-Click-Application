@@ -1,7 +1,7 @@
 import { io } from 'socket.io-client';
 
 // For development, use the WebContainer URL
-const SOCKET_URL = 'http://localhost:3001';
+const SOCKET_URL = 'https://realtime-button-server.onrender.com/';
 
 export const socket = io(SOCKET_URL, {
   transports: ['websocket', 'polling'],
